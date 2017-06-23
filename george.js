@@ -94,14 +94,22 @@ function TestingView(parentRef) {
 						<minus> - </minus>
 					</widescreen>
 				</tab>
+				<tab data-tab="todos">
+					To Dos
+					<widescreen> 
+						<plus> + </plus>
+						<minus> - </minus>
+					</widescreen>
+				</tab>
 				<panel data-tab="tests" class="active">
 					
 					<div id="mocha"></div>
 				</panel>
 				<panel data-tab="sequence">
-						
 
-
+				</panel>
+				<panel data-tab="todos">
+					<iframe src="http://127.0.0.1:4001/"></iframe>
 				</panel>
 				
 			</section>
