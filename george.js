@@ -43,7 +43,7 @@ var requirements = [
 
 var css = [
 	// '../tests/mocha.css'	
-	'https://rawgit.com/mitni455/2eb2376f96ce9f6c3129efb99542a088/raw/0b044e2086d20a69806a730282837ed3b2724192/mocha.css'
+	'https://rawgit.com/mitni455/2eb2376f96ce9f6c3129efb99542a088/raw/f15ff61e43b5db5044de1aa891dadd08cbe34ac4/mocha.css'
 ];
 
 
@@ -160,7 +160,26 @@ function main(){
 		var seq = george.dataset.sequence;
 
 		$('panel[data-tab="sequence"]').load(seq, function() {
-			$(".diagram").sequenceDiagram({theme: 'simple'});
+
+			$(".diagram").each(function(i, el) {
+				var diagram = $(this);
+				var title = diagram.attr('title');
+
+				diagram.before('<diagramheader data-title="'+title+'">'+title+'</diagramheader>');
+
+				diagram.sequenceDiagram({theme: 'simple'});
+			})
+
+			$('diagramheader').click(function() {
+				
+				console.log('diagramheader', $(this)); 
+				
+				var diagramheader = $(this);					
+				var title = diagramheader.attr('data-title');
+				diagramheader.next().toggleClass('closed');
+			})
+
+			// $(".diagram").sequenceDiagram({theme: 'simple'});
 		});
 		
 	});
