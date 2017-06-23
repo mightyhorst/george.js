@@ -1,0 +1,25 @@
+{
+  "name": "GeorgeJs",
+  "homepage": "https://github.com/mitni455/george.js",
+  "authors": [
+    "Nick Mitchell <nick@kitset.io>"
+  ],
+  "description": "GeorgeJs is a mocha and chai testing framework and a sequence diagramming framework that injects a sidebar",
+  "main": "george.js",
+  "keywords": [
+    "mocha",
+    "chai",
+    "testing",
+    "bdd",
+    "sequencediagram",
+    "uml"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
