@@ -8,7 +8,7 @@ bower install georgejs
 
 ### usage
 ```html
-<script src="{{bower_components}}/georgejs/georgejs" 
+<script src="bower_components/GeorgeJs/george.js" 
   data-tests="path/to/tests.js"
   data-sequence="path/to/sequence.html"></script>
  ```
