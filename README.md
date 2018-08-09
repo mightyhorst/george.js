@@ -30,13 +30,13 @@ describe('example bdd suite', function() {
 
 ### example sequence.html
 ```html
-<div class="diagram">
+<div class="diagram" title="Title for this sequence">
 	A->B: Message
 	A-->B: Message
 	B->A: Message
 	B-->A: Message
 </div>	
-<div class="diagram">
+<div class="diagram" title="Title for this sequence">
 	C->B: Message
 	C-->B: Message
 	B->A: Message
