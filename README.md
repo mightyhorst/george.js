@@ -12,7 +12,10 @@ bower install georgejs
   data-tests="path/to/tests.js"
   data-sequence="path/to/sequence.html"></script>
  ```
-  
+### usage via cdn 
+<script src="https://cdn.jsdelivr.net/gh/mitni455/george.js@1.0.0/george.js"
+  data-tests="path/to/tests.js"
+  data-sequence="path/to/sequence.html"></script>
   
 ### example tests.js
 ```javascript
